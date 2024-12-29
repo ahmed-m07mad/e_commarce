@@ -3,9 +3,8 @@ import Navbar from "../Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Online from "../Online/Online";
-import OffLine from "../offLine/offLine";
 import wifi from "../../assets/images/wifi-exclamation-svgrepo-com.svg";
-
+import Offline from "../offLine/offLine";
 export default function Layout() {
   return (
     <div>
@@ -15,7 +14,7 @@ export default function Layout() {
           <Outlet></Outlet>
         </div>
       </Online>
-      <OffLine>
+      <Offline>
         <section className="my-32">
           <div className=" flex flex-col justify-center items-center space-y-4 ">
             <img src={wifi} alt="" />
@@ -32,7 +31,7 @@ export default function Layout() {
             </div>
           </div>
         </section>
-      </OffLine>
+      </Offline>
       <Footer />
     </div>
   );
