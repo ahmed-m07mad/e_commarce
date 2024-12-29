@@ -77,9 +77,9 @@ export default function Cart() {
       },
     },
     onSubmit: (values) => {
-      if (paymentMethod === "cash") onLinePayment(values);
+      if (paymentMethod === "cach") CheckOut(values);
       else {
-        CheckOut(values);
+        onLinePayment(values);
       }
     },
   });

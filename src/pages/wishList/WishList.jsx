@@ -7,6 +7,8 @@ import { Helmet } from "react-helmet";
 
 export default function WishLists() {
   const { getWishList, WishListinfo } = useContext(WishContext);
+  console.log(WishListinfo);
+
   useEffect(() => {
     getWishList();
   }, [WishListinfo.count]);
@@ -34,9 +36,9 @@ export default function WishLists() {
               <h2>There are not items yet.</h2>
               <Link
                 to="/allproducts"
-                className="btn font-medium text-center  px-4 py-2 rounded-xl bg-primary-500 hover:bg-primary-600 hover:duration-300 hover:transition-colors "
+                className="btn font-medium text-center mx-2  px-3 py-2 rounded-xl bg-primary-500 hover:bg-primary-600 hover:duration-300 hover:transition-colors "
               >
-                Add your first product to Wish List
+                Add your product to Wish List
               </Link>
             </div>
           ) : (
