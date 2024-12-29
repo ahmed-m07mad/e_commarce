@@ -183,13 +183,13 @@ export default function Cart() {
                           placeholder="details"
                         ></textarea>
                       </div>
-                      <div className="flex my-3 justify-center items-center">
+                      <div className="flex my-3 flex-col sm:flex-row space-y-3 justify-around px-6  items-center">
                         <button
                           onClick={() => {
                             setpaymentMethod("cach");
                           }}
                           type="submit"
-                          className="btn mr-10 rounded-xl bg-primary-500 hover:bg-primary-700 hover:transition-colors hover:duration-300"
+                          className="btn w-[70%] sm:w-fit  rounded-xl bg-primary-500 hover:bg-primary-700 hover:transition-colors hover:duration-300"
                         >
                           {" "}
                           cash order{" "}
@@ -199,7 +199,7 @@ export default function Cart() {
                             setpaymentMethod("onLine");
                           }}
                           type="submit"
-                          className="btn ml-10 rounded-xl bg-primary-500 hover:bg-primary-700 hover:transition-colors hover:duration-300"
+                          className="btn px-2 w-[70%] sm:w-fit  rounded-xl bg-primary-500 hover:bg-primary-700 hover:transition-colors hover:duration-300"
                         >
                           {" "}
                           online payment{" "}
